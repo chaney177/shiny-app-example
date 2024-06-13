@@ -27,8 +27,7 @@ server <- function(input, output) {
       geom_histogram(alpha = 0.6, position = "identity", bins = input$bin_num_input) +
       scale_fill_manual(values = c("Adelie" = "#FEA346", "Chinstrap" = "#B251F1", "Gentoo" = "#4BA4A4")) +
       labs(x = "Flipper length (mm)", y = "Frequency",
-           fill = "Penguin species") +
-      myCustomTheme()
+           fill = "Penguin species")
     
   })
   
